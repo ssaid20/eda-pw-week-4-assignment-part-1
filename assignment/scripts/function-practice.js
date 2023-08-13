@@ -60,7 +60,6 @@ function getLast(array) {
   }
   return array[array.length - 1]; // Return the last item
    
-
 }
 
 // 7. Function to find a value in an array. Return true if the 
@@ -92,9 +91,10 @@ console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 // 9. Function to return the sum of all numbers in an array
 function sumAll() {
   let sum = 0;
-  // TODO: loop to add items
-
-  // TODO: return the sum
+  for (let num of numbers) {
+    sum += num; // Add each number to the sum
+  }
+  return sum; // Return the sum
 }
 
 // 10. Function to return a new array of all positive (greater than zero)
